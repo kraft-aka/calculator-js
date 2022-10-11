@@ -58,8 +58,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .4s ease-in-out;
 }
 
+.calculator:hover {
+  background-color: #34495E;
+  color:#FDFEFE;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
 
 
 .calculator-operator {
@@ -70,6 +77,12 @@ h1 {
   align-items: center;
   background-color: #D7DBDD;
   border-radius: 5px 5px 5px 5px;
+  transition: .4s ease-in-out;
+}
+
+.calculator-operator:hover {
+  background-color: #FDEDEC;
+  font-size: 1.1rem;
 }
 
 #equal {
