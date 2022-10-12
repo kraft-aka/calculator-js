@@ -80,7 +80,8 @@ h1 {
   transition: .4s ease-in-out;
 }
 
-.calculator-operator:hover {
+.calculator-operator:hover,
+#equal:hover {
   background-color: #FDEDEC;
   font-size: 1.1rem;
 }
