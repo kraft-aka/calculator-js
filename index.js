@@ -1,17 +1,34 @@
+const inputNumber = document.querySelectorAll('.calculator')
+const display = document.getElementById('display');
 
 
-const add = (x,y) => x + y
 
-console.log(add(10,4))
 
-const subtract = (x,y) => x-y
 
-console.log(subtract(10,5))
+const calculate = (x, y, o) => {
+ 
+  switch(o) {
+    case '+':
+      console.log(x + y)
+      return x + y;
+      break;
+    
+    case '-':
+      console.log(x -y);
+      return x - y;
+      break;
 
-const multiply = (x,y) => x * y
+    case '*':
+      console.log(x * y);
+      return x * y;
 
-console.log(multiply(10,5))
+    case '/':
+      console.log(x / y);
+      return x / y;
+      break;
+  }
+}
 
-const divide = (x,y) => x / y
-
-console.log(divide(10,5))
+const clearScreen = () => {
+  return display.innerHTML = ''
+}
