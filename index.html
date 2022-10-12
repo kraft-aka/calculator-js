@@ -12,26 +12,28 @@
 <body>
   <h1>Calculator Project /HTML, CSS, JS/</h1>
   <div class="calculator-container">
-    <input class="display" id="display" disabled>
-    <button class="operator" id="plus">+</button>
-    <button class="operator" id="minus">-</button>
-    <button class="operator" id="multiply">x</button>
-    <button class="operator" id="divide">/</button>
-    <button class="number item-1">1</button>
-    <button class="number item-2">2</button>
-    <button class="number item-3">3</button>
-    <button class="number item-4">4</button>
-    <button class="number item-5">5</button>
-    <button class="number item-6">6</button>
-    <button class="number item-7">7</button>
-    <button class="number item-8">8</button>
-    <button class="number item-9">9</button>
-    <button class="number item-0">0</button>
-    <button class="number item-float" id="float">.</button>
-    <button class="operator clear-screen" id="clear-screen" onclick="clearScreen()">AC</button>
-    <button class="operator equal" id="equal">=</button>
-    <button class="operator clear" id="clear">C</button>
-
+    <div class="display" id="display" data-display>
+      <div class="previous-number" data-previous-number></div>
+      <div class="current-number" data-current-number></div>
+    </div>
+    <button class="operator" id="plus" data-operation>+</button>
+    <button class="operator" id="minus" data-operation>-</button>
+    <button class="operator" id="multiply" data-operation>x</button>
+    <button class="operator" id="divide" data-operation>/</button>
+    <button class="number item" data-number>1</button>
+    <button class="number item" data-number>2</button>
+    <button class="number item" data-number>3</button>
+    <button class="number item" data-number>4</button>
+    <button class="number item" data-number>5</button>
+    <button class="number item" data-number>6</button>
+    <button class="number item" data-number>7</button>
+    <button class="number item" data-number>8</button>
+    <button class="number item" data-number>9</button>
+    <button class="number item" data-number>0</button>
+    <button class="number decimal" id="decimal" data-number>.</button>
+    <button class="operator clear-screen" id="clear-screen" data-clear-display>AC</button>
+    <button class="operator equal" id="equal" data-equal>=</button>
+    <button class="operator clear" id="clear" data-clear>C</button>
   </div>
 
   <script src="index.js"></script>

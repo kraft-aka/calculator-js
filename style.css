@@ -48,6 +48,24 @@ h1 {
   width: 100%;
   background-color: #FDFEFE;
   border-radius: 5px 5px 5px 5px;
+  padding: .5rem .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.previous-number {
+  font-size: 1rem;
+  color: #D7DBDD;
+  text-shadow: none;
+}
+
+.current-number {
+  font-size: 1.5rem;
+  text-shadow: none;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .number {
